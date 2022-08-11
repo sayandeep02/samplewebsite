@@ -1,0 +1,491 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: rgba(0, 0, 0, 0.3) url("10.jpg") top center;
+
+    background-color: #cccccc25;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-blend-mode: darken;
+
+
+
+}
+
+
+
+
+/* css variables */
+:root {
+    --navbar-height: 59px;
+
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation bar: Logo and image */
+#logo {
+    margin: 10px 34px;
+    /* height: 88px; */
+
+}
+
+#logo img {
+    margin: 3px, 6px;
+    height: 59px;
+
+}
+
+
+
+/* Navigation bar :list styling */
+
+#navbar {
+    position: relative;
+}
+
+
+
+#navbar ul {
+    display: flex;
+    margin-left: 225px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    padding-left: 3px;
+}
+
+
+#navbar ul a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+#navbar ul a:hover {
+    color:#000;
+background-color: azure;
+    transition-delay: 0.1s;
+    border-radius: 30px;
+
+
+}
+
+#navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s
+}
+
+#navbar ul li:hover::after {
+    width: 90%;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+/* to decorate the content */
+
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 43px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 19px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    font-family: sans-serif;
+    font-weight: 400;
+
+    /* 123 */
+   
+
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+    font-family: sans-serif;
+}
+
+.cn:hover {
+    background-color:blueviolet;
+    
+
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 53px;
+
+    font-style: italic;
+}
+
+/* for the background  */
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(10.jpg), no-repeat center;
+    background-position: center;
+
+    z-index: -1;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: darken;
+
+}
+
+
+
+/* about Us decoration */
+
+#about {
+    background: rgba(0, 0, 0, 0.45) url(1548.jpg);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    padding: 60px 0 40px 0;
+    background-blend-mode: darken;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.row {
+
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 147px;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h2 {
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding-right: 107px;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+
+.col-lg-3 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 147px;
+}
+
+#about h3 {
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.col-lg-3 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 147px;
+}
+
+
+
+
+
+
+
+#venue {
+    padding: 60px 0;
+}
+
+#venue .JU {
+    margin-bottom: 3px;
+}
+
+.JU {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+.section-header h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.section-header h2:hover {
+    font-size: 50px;
+}
+
+.section-header p {
+    text-align: center;
+
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e3edef;
+}
+
+
+#venue {
+    background: rgba(0, 0, 0, 0.49) url(JU.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    padding: 60px 0 40px 0;
+    background-blend-mode: darken;
+   
+
+}
+
+#venue.JU {
+    visibility: visible;
+}
+
+.happening {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section-header a:hover {
+    color: rgb(185, 186, 192);
+    transition-delay: 0.1s;
+}
+
+.aboutju {
+    position: relative;
+    max-width: 600px;
+    padding: 60px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 10px;
+    /* padding-left: 100px; */
+    margin-left: 900px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    /* transition-property: background-color; */
+    /* transition-duration: 4s; */
+    /* transition: all 0.3s ease-in-out; */
+
+}
+
+.aboutju h3 {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+.aboutju p {
+    padding: 10px;
+}
+
+.aboutju b {
+    padding: 3px;
+
+}
+
+.aboutju a {
+    text-decoration: none;
+    color: white;
+}
+
+.aboutju a:hover {
+    transition-delay: 0.1s;
+    color: rgb(185, 186, 192);
+}
+
+/* .aboutju:hover {
+
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.0);
+}
+
+
+
+.aboutju h3 {
+    transition: all 0.3s ease-in-out;
+} */
+
+.aboutju h3:hover{
+    font-size: 19px;
+    transform: scale(1.0);
+}
+
+.sponsors {
+    padding-top: 50px;
+}
+.sponsors p {
+    text-align: center;
+    color: black;
+}
+
+.sponsors img {
+    text-align: left;
+    width: 20%;
+    padding: 20px 2%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;}
+
+    .sponsors{
+        background: rgba(0, 0, 0, 0.75) url(1191.jpg) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        padding: 60px 0 40px 0;
+        background-blend-mode: darken;
+    }
+
+    .sponsors p{
+        color:  #610af2;
+        font-size: 30px;
+        font-family: sans-serif;
+
+    }
+
+
+
+    element.style {
+        visibility: visible;
+        animation-name: fadeInUp;
+    }
+    
+    #youtube{
+        margin-left: 500px;
+    }
